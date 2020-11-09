@@ -44,7 +44,7 @@ export const Container = styled(motion.main)`
   }
 `;
 
-export const Background = styled.div`
+export const Background = styled(motion.div)`
   background-image: url(${backgroundImage});
   background-size: cover;
   background-position: 50% 0%;
@@ -54,5 +54,4 @@ export const Background = styled.div`
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.15;
 `;

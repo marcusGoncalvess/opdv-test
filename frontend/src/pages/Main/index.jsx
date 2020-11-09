@@ -6,7 +6,8 @@ import { containerAnimation, itensAnimation } from '../../utils/animations';
 import { Container, Background } from './styles';
 
 function Main() {
-  // motion.element é um elemento animado pela lib framer-motion
+  // motion.h1 é um h1 animado pela lib framer-motion
+  // pode ser usado com qualquer outro elemento html
   return (
     <Container variants={containerAnimation} initial="hidden" animate="visible">
       <div className="content">
@@ -23,7 +24,7 @@ function Main() {
           custom={3}
         />
       </div>
-      <Background />
+      <Background animate={{ opacity: 0.15 }} transition={{ duration: 2 }} />
     </Container>
   );
 }
