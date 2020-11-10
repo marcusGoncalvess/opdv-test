@@ -29,6 +29,8 @@
       "react-hooks/exhaustive-deps": "warn",
       "react/jsx-filename-extension": [1, { "extensions": [".jsx"] }],
       "import/prefer-default-export": "off",
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      "no-console": "off",
+      "no-alert": "off"
     }
 }

@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 
 import backgroundImage from '../../assets/background.jpg';
 
+// motion.main é um main animado pela lib framer-motion
+// pode ser usado com qualquer outro elemento html
+
 export const Container = styled(motion.main)`
   position: relative;
 
@@ -19,29 +22,41 @@ export const Container = styled(motion.main)`
     color: #fff;
     text-align: center;
     max-width: 900px;
+    position: relative;
 
-    h1 {
-      font-size: 70px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 30px;
-      max-width: 80%;
-    }
-
-    input {
-      height: 60px;
-      width: 50%;
-      margin-top: 30px;
-      background: transparent;
-      border: none;
-      outline: none;
-      border-bottom: 2px solid;
-      color: #fff;
-      font-size: 25px;
+    form {
+      width: 100%;
     }
   }
+`;
+
+export const Title = styled(motion.h1)`
+  font-size: 70px;
+  margin-bottom: 20px;
+`;
+
+export const Text = styled(motion.h1)`
+  font-size: 30px;
+  max-width: 80%;
+  font-weight: 400;
+`;
+
+export const Input = styled(motion.input)`
+  height: 60px;
+  width: 50%;
+  margin-top: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid;
+  color: #fff;
+  font-size: 25px;
+`;
+
+export const PressEnter = styled(motion.p)`
+  position: absolute;
+  top: 110%;
+  left: 50%;
 `;
 
 export const Background = styled(motion.div)`

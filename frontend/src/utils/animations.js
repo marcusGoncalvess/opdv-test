@@ -23,3 +23,21 @@ export const itensAnimation = {
     },
   }),
 };
+
+export const pressEnterAnimation = {
+  hidden: { y: -30, opacity: 0, x: '-50%' },
+  visible: {
+    y: 0,
+    opacity: 1,
+    x: '-50%',
+  },
+};
+
+export const modalAnimation = {
+  hidden: { y: '-100%', opacity: 0, x: '-50%' },
+  visible: {
+    y: '-50%',
+    opacity: 1,
+    x: '-50%',
+  },
+};
