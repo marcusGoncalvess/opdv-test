@@ -59,6 +59,12 @@ export const PressEnter = styled(motion.p)`
   left: 50%;
 `;
 
+export const Loading = styled(motion.p)`
+  position: absolute;
+  top: 120%;
+  left: 50%;
+`;
+
 export const Background = styled(motion.div)`
   background-image: url(${backgroundImage});
   background-size: cover;

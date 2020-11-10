@@ -12,6 +12,7 @@ import {
   Text,
   Input,
   PressEnter,
+  Loading,
 } from './styles';
 
 import api from '../../services/api';
@@ -21,10 +22,12 @@ function Main() {
   const [restaurantCode, setRestaurantCode] = useState('');
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [responseAPI, setResponseAPI] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const getMenu = useCallback(
     async event => {
       event.preventDefault();
+      setLoading(true);
       let error = false;
       const response = await api.get(`/menu/${restaurantCode}`).catch(err => {
         error = true;
@@ -39,6 +42,7 @@ function Main() {
 
       setResponseAPI(response.data);
       setIsModalVisible(true);
+      setLoading(false);
     },
     [restaurantCode],
   );
@@ -73,6 +77,9 @@ function Main() {
           <PressEnter variants={pressEnterAnimation}>
             Pressione enter para consultar
           </PressEnter>
+        )}
+        {loading && (
+          <Loading variants={pressEnterAnimation}>Carregando...</Loading>
         )}
       </div>
       <Background animate={{ opacity: 0.15 }} transition={{ duration: 2 }} />
