@@ -33,12 +33,19 @@ export const Container = styled(motion.main)`
 export const Title = styled(motion.h1)`
   font-size: 70px;
   margin-bottom: 20px;
+
+  @media (max-width: 700px) {
+    font-size: 30px;
+  }
 `;
 
 export const Text = styled(motion.h1)`
   font-size: 30px;
   max-width: 80%;
   font-weight: 400;
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
 `;
 
 export const Input = styled(motion.input)`
@@ -51,6 +58,9 @@ export const Input = styled(motion.input)`
   border-bottom: 2px solid;
   color: #fff;
   font-size: 25px;
+  @media (max-width: 700px) {
+    width: 90%;
+  }
 `;
 
 export const PressEnter = styled(motion.p)`
