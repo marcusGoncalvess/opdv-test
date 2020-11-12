@@ -3,7 +3,7 @@ O objetivo era criar uma API em node que busca cardápio do ifood, para isso, no
 Para conseguir esse código é bem fácil, irá aparecer na URL quando você acessar um restaurante no ifood.
 ## Front-end
 
-<img src="./github_assets/frontend.png"><br>
+<img src="./github_assets/frontend.jpeg"><br>
 Você pode testar o projeto que já está em deploy <a href="https://opdv-test.vercel.app/">aqui</a>.<br>
 ### Códigos para teste<br>
 Código Petiskeira: 0ea2b98f-8d77-4331-8a5b-a36d9ced047e <br>
