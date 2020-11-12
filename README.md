@@ -24,7 +24,7 @@ $ yarn dev
 ```bash
 $ cd opdv-test/frontend
 $ yarn
-$ yarn dev
+$ yarn start
 ```
 
 ## Ferramentas utilizadas
